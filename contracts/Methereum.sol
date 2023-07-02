@@ -9,6 +9,7 @@ contract Methereum is ERC20, Ownable {
     constructor() ERC20("Methereum", "Mth")  {
         uint256 totalSupply = 1000000 * 10 ** decimals();
         _mint(msg.sender, totalSupply);
+
     }
 
     // function transfer(address reciever, uint256 amount) public override onlyOwner {
@@ -17,4 +18,6 @@ contract Methereum is ERC20, Ownable {
     function transfer( address to, uint256 amount) public {
      transfer(msg.sender, to, amount);
     }
+
+    uint write another function
 }
