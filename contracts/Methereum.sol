@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract Methereum is ERC20, Ownable {
     constructor() ERC20("Methereum", "Mth")  {
         uint256 totalSupply = 1000000 * 10 ** decimals();
-        _mint(msg.sender, totalSupply);
+        _mint(msg.sender, totalSupply)
 
     }
 
@@ -19,5 +19,4 @@ contract Methereum is ERC20, Ownable {
      transfer(msg.sender, to, amount);
     }
 
-    uint write another function
 }
